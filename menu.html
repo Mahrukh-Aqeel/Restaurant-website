@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <link rel="icon" href="../images/logo.png">
+    <!---Script Tags--->
+<script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+
+ <script src="../src/jquery-3.6.0.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://kit.fontawesome.com/dc0b4d1ce5.js" crossorigin="anonymous"></script>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delicious Delights</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-xl  bg-transparent">
+         
+            <!--left-side-->
+            <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link  active" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Reservations.html">Reservation</a>
+                </li>
+              </ul>
+            </div>
+  <!--left-side-->
+  <!--center-side-->
+   <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-hamburger"></i>
+            </button>
+            <a class="navbar-brand  order-1 mr-xl-0" href="../index.html">
+              <img src="../images/logo.png" alt="logo" width="150px">
+            </a>
+  <!--center-side-->
+  
+  <!--right-side-->
+            <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html">Blogs</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact_us.html">Contact us</a>
+                </li>
+              </ul>
+            </div>
+  <!--right-side-->
+          </nav>
+          
+             <div class="text">
+                <h2 class="heading">The Menu </h2>
+                </div>
+   </header>
+ 
+   <!---filterable---->
+<section>
+    <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="starter">Starters</li>
+        <li class="list" data-filter="main course">Mains</li>
+        <li class="list" data-filter="juices">Juices</li>
+        <li class="list" data-filter="dessert">Dessert</li>
+
+        <li class="cart">
+            <a href="#" class="un-icon">
+                <img class="my-cart-icon" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/35/000000/external-shopping-cart-cyber-monday-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"/><span class=" my-cart-badge"></span>
+        </a>
+        </li>
+
+    </ul>
+</section>
+
+<!--menu-->
+
+<div class="menu">
+        <div class="container">
+
+
+
+            <div class="card" data-item="main course">
+                <div class="imgbx">
+                    <img src="../images/burgers.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Beef Burger</h3> 
+                        <h2>Beef Patty On Fresh Lettuce & Garlic Mayo With Fries</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 350</h2>
+                        <div class="btn">
+                           <a href="#!" class="my-cart-btn" data-id="1" data-name="Beef Burger" data-summary="summary 1" data-price="350" data-quantity="1" data-image="../images/burgers.jpg">
+                               Order Now
+                           </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" data-item="starter">
+                <div class="imgbx">
+                    <img src="../images/salad.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Salad</h3> 
+                        <h2>Kidney Beans,Corn,IceBerg,Cherry Tomatoes & Olive Oil</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 300</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="2" data-name="Salad" data-summary="summary 2" data-price="300" data-quantity="1" data-image="../images/salad.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="card" data-item="main course">
+                <div class="imgbx">
+                    <img src="../images/salmon.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Chicken Steak</h3> 
+                        <h2>Marinated Chicken With Special Sauce With Salad</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 500</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="3" data-name="Chicken Steak" data-summary="summary 3" data-price="500" data-quantity="1" data-image="../images/salmon.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+    
+            <div class="card" data-item="main course">
+                <div class="imgbx">
+                    <img src="../images/sandwich.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Club Sandwich</h3> 
+                        <h2>Chicken With special Sauce ,Onion,Lettuce,Fried Egg </h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 450</h2>
+                        <div class="btn">
+                            <a  href="#!"  class="my-cart-btn" data-id="4" data-name="Club Sandwich" data-summary="summary 4" data-price="450" data-quantity="1" data-image="../images/sandwich.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+   
+            <div class="card" data-item="main course">
+                <div class="imgbx">
+                    <img src="../images/steak.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Beef Steak</h3> 
+                        <h2>Marinated Beef With Special Recipe & with Salad , Soda Drink</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 750</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="5" data-name="Beef Steak" data-summary="summary 5" data-price="750" data-quantity="1" data-image="../images/steak.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="card" data-item="dessert">
+                <div class="imgbx">
+                    <img src="../images/ice.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Ice-Cream</h3> 
+                        <h2>Mango,Strawberry,Chocolate,Pista,Pineapple & Almond</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 250</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="6" data-name="Ice-Cream" data-summary="summary 6" data-price="250" data-quantity="1" data-image="../images/ice.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" data-item="starter">
+                <div class="imgbx">
+                    <img src="../images/friedchicken.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Chicken Shot</h3> 
+                        <h2>Crispy Chicken With Special Recipe Mayo Sauce</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 300</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="7" data-name="Chicken Shot" data-summary="summary 7" data-price="300" data-quantity="1" data-image="../images/friedchicken.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" data-item="starter">
+                <div class="imgbx">
+                    <img src="../images/english breakfast.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Avacado With Egg</h3> 
+                        <h2>Fresh Avacado With Egg & Green Salad & Nuts</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 500</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="8" data-name="Avacado With Egg" data-summary="summary 8" data-price="500" data-quantity="1" data-image="../images/english breakfast.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" data-item="juices">
+                <div class="imgbx">
+                    <img src="../images/apple.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Fresh Apple Juice</h3> 
+                        <h2>Freshly Made Apple Juice With Cucumber</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 300</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="9" data-name="Fresh Apple Juice" data-summary="summary 9" data-price="300" data-quantity="1" data-image="../images/apple.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card" data-item="juices">
+                <div class="imgbx">
+                    <img src="../images/orange.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Fresh Orange Juice</h3> 
+                        <h2>Freshly Made Orange Juice With Lemon</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 300</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="10" data-name="Fresh Orange Juice" data-summary="summary 10" data-price="300" data-quantity="1" data-image="../images/orange.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+     
+
+
+            <div class="card" data-item="main course">
+                <div class="imgbx">
+                    <img src="../images/taco.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Beef Taco</h3> 
+                        <h2>Beef Taco With Fresh Bread & Salsa Sauce</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 500</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="11" data-name="Beef Taco" data-summary="summary 11" data-price="500" data-quantity="1" data-image="../images/taco.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+ 
+
+            <div class="card" data-item="starter">
+                <div class="imgbx">
+                    <img src="../images/nacho.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Nacho</h3> 
+                        <h2>Nacho With Iceburg,Jalpeno & Sauce</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 400</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="12" data-name="Nacho" data-summary="summary 12" data-price="400" data-quantity="1" data-image="../images/nacho.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+ 
+
+ 
+            <div class="card" data-item="main course">
+                <div class="imgbx">
+                    <img src="../images/pizza.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Pizza</h3> 
+                        <h2>Freshly Made Pizza With Chicken & veggies</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 800</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="13" data-name="Pizza" data-summary="summary 13" data-price="800" data-quantity="1" data-image="../images/pizza.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" data-item="starter">
+                <div class="imgbx">
+                    <img src="../images/pasta.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Alfredo Pasta</h3> 
+                        <h2>Pasta With Creamy Sauce & Chicken</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 600</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="14" data-name="Alfredo Pasta" data-summary="summary 14" data-price="600" data-quantity="1" data-image="../images/pasta.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="dessert">
+                <div class="imgbx">
+                    <img src="../images/smoothie.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Smoothie</h3> 
+                        <h2>Smoothie With Fresh Fruits & Dry Fruits</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 200</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="15" data-name="Smoothie" data-summary="summary 15" data-price="200" data-quantity="1" data-image="../images/smoothie.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" data-item="dessert">
+                <div class="imgbx">
+                    <img src="../images/pancake.jpg">
+                </div>
+                
+                <div class="content">
+                    <div class="productName">
+                       <h3>Pancakes</h3> 
+                        <h2>Fresh Pancake With Honey & Caramel Syrup</h2>
+                    </div>
+                    <div class="price_rating">
+                        <h2>RS 400</h2>
+                        <div class="btn">
+                            <a href="#!"  class="my-cart-btn" data-id="16" data-name="Pancakes" data-summary="summary 16" data-price="400" data-quantity="1" data-image="../images/pancake.jpg">
+                                Order Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+
+<!-------Footer-->
+<footer>
+<div class="footer-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 sec-one md-mb-30 sm-mb-30">
+                <h2>delicious delights</h2>
+                <p>Everyone has a favorite restaurant that he or she loves to eat at. The best restaurant to go to in Altoona is The Delicious Delights. 
+                    This peaceful place has the most delicious food 
+                    The Delicious Delights is the most exquisite place to eat and is truly the finest restaurant in town.</p>
+            </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 sec-two md-mb-30 sm-mb-30">
+                    <h2> Open Hours</h2>
+                    <h3>Tuesday to Friday</h3>
+                                  <p>7:00 AM - 9:00 PM</p>
+                                  <h3>Saturday to Sunday</h3>
+                              <p>11:00 AM - 10:00 PM</p>    
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 sec-three sm-mb-30">
+                    <h2>Follow Us</h2>
+                   <p>Follow us on our social media profile is order to keep updated.</p> 
+               <a href="https://www.facebook.com/login/"><i class="fa fa-facebook"></i></a>
+               <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+  
+               <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                 <p class="map">
+                        <iframe style="filter: invert(95%)"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.5519807792607!2d66.98879981546894!3d24.844990551995085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb315fd9484034d%3A0xa34ea99b28ea0c40!2sPort%20Grand!5e0!3m2!1sen!2s!4v1624837372906!5m2!1sen!2s" width="100%" height="130" style="border:0;" allowfullscreen="ture" loading="lazy"></iframe>
+                     </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 sec-four sm-mb-30">
+                    <h2>Our Newsletter</h2>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam totam accusamus enim aut deleniti nam corrupti exercitationem sequi, libero maiores.</p>
+                    <form action="">
+                        <input type="email">
+                        <input type="submit" value="Subcribe">
+                    </form>
+                  
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <p class="copyright">All Right Reserved By &copy; Delicious Delights , 2021</p>
+
+
+</footer>
+
+<!--navbar scroll code-->
+<script type="text/javascript">
+$(window).on('scroll',function(){
+    if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+    }
+    else
+    {
+        $('nav').removeClass('black');
+    }
+})
+</script>
+ 
+      
+<script>
+    let list = document.querySelectorAll('.list');
+    let card =  document.querySelectorAll('.card');
+
+    for (let i = 0; i<list.length; i++) {
+       list[i].addEventListener('click', function(){
+         for(let j = 0; j<list.length; j++){
+             list[j].classList.remove('active');
+         }  
+         this.classList.add('active');
+
+         let dataFilter = this.getAttribute('data-filter');
+
+         for(let k = 0; k<card.length; k++){
+            card[k].classList.remove('active');
+             card[k].classList.add('hide');
+
+
+            if (card[k].getAttribute('data-item') == dataFilter ||
+            dataFilter == "all") {
+                card[k].classList.remove('hide');
+                card[k].classList.add('active');
+            }
+
+         }
+       })
+        
+    }
+</script>
+<script type="text/javascript" src="../src/jquery.min.js"></script>
+<script type='text/javascript' src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script type='text/javascript' src="../src/jquery.mycart.js"></script>
+<script type='text/javascript' src="../src/cart.js"></script>
+
+</body>
+</html>

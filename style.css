@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Herr+Von+Muellerhoff&display=swap');
+
+
+body{
+    overflow-x: hidden;
+    text-decoration: none;
+    outline:none;
+  }
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+}
+@media (min-width:992px) {
+  .navbar-expand-xl .navbar-collapse{
+    width: 100%;
+  }
+}
+
+
+header
+{
+     background-image: url(images/header-bg.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+header ul li
+{
+list-style: none;
+display: flex;
+
+}
+header ul li a
+{
+    transition: all ease 0.5s;
+}
+
+
+
+/*--------------scrollbar-section-------*/
+::-webkit-scrollbar{
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track{
+    width: 0.7rem;
+    background: #292828;
+    border-left: 0 solid rgb(255, 255, 255);
+    border-right: 0 solid rgb(255, 255, 255);
+    
+}
+::-webkit-scrollbar-thumb{
+    background: #BB9F01;
+    border-radius: 1rem;
+    width: 0;
+    height: 10%;
+    transform: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+/*--------Navbar-----*/
+nav{
+width: 100%;
+max-height: max-content;
+}
+
+.navbar-toggler
+{
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler i{
+  color:#BB9F01;
+  font-size: 2.1rem ;
+  border: none !important;
+}
+
+
+.navbar-nav li a
+{
+ margin: 1em 5em;
+color: #fff !important;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family:'Poppins';
+  padding: 10px 50px;
+}
+
+.navbar
+{
+  background-color: rgba(235, 228, 228, 0.15);  
+backdrop-filter: blur(4px);
+}
+
+.header nav
+{
+  top: 0;
+  z-index: 999;
+  transition:all 0.5s ease-in-out;
+}
+nav.black
+{
+  background:#262526 !important;
+  height: 100px;
+  padding:15px 40px ;
+position: fixed;
+}
+
+
+nav a.active
+{
+  border-bottom: 4px dotted #BB9F01;
+ transition: all 0.5s ease-in;
+}
+
+
+.text{
+    width: 100%;
+    text-align:center;
+    bottom: 35%;
+    position: absolute;
+}
+.heading{
+    text-align: center;
+    justify-content: space-between;
+    color: #BB9F01;
+    font-size: 15vh;
+    letter-spacing: 3px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: 100;
+    line-height: .4;
+}
+.heading::first-letter{
+    font-size: 15rem;
+}
+
+.text .title{
+
+  text-align: center;
+  justify-content: space-between;
+  color: aliceblue;
+  font-size: 5vh;
+    letter-spacing: 6px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/*------ABOUT---*/
+.about{
+    width: 100%;
+    height: auto;
+    padding: 35px 0;
+}
+.discover{
+    margin-top: 3rem;
+}
+.discover h2{
+    position: relative;
+    text-align: center;
+    font-size: 10vh;
+    line-height: .4;
+   color: #BB9F01;
+   font-family: 'Herr Von Muellerhoff', cursive;
+   font-weight: 100;
+}
+
+.discover h3{
+    position: relative;
+    text-align: center;
+    font-size: 5vh;
+   color: #181918;
+   font-family: 'Bebas Neue', cursive;
+   letter-spacing: 4px;
+}
+.star{
+    font-size: 2vh;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+.discover .about-text{
+    display: flex;
+    position: relative;
+    padding-left: 20px;
+}
+.discover .btn {
+position: relative;
+display:block;
+font-size: 1.8vh;
+text-align: center;
+font-family: 'Bebas Neue', cursive;
+text-decoration: none;
+line-height: 1;
+letter-spacing: 0.1em;
+color: #BB9F01;
+padding: 3px 0;
+background: transparent !important;
+}
+
+.divider {								/* minor cosmetics */
+  display: table; 
+  font-size: 24px; 
+  text-align: center; 
+  width: 50%; 						/* divider width */
+  margin: -5px auto;					/* spacing above/below */
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+  width: 50%;
+  top: 16px;							/* adjust vertical align */
+  -moz-background-size: 100% 2px; 	/* line width */
+  background-size: 100% 2px; 			/* line width */
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#BB9F01));
+  background-image: -webkit-linear-gradient(180deg, transparent, #BB9F01);
+  background-image: -moz-linear-gradient(180deg, transparent, #BB9F01);
+  background-image: -o-linear-gradient(180deg, transparent, #BB9F01);
+  background-image: linear-gradient(90deg, transparent, #BB9F01);
+}
+.divider span:nth-child(2) {
+  color: #fff; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#BB9F01), to(transparent));
+  background-image: -webkit-linear-gradient(180deg, #BB9F01, transparent);
+  background-image: -moz-linear-gradient(180deg, #BB9F01, transparent);
+  background-image: -o-linear-gradient(180deg, #BB9F01, transparent);
+  background-image: linear-gradient(90deg, #BB9F01, transparent);
+}
+
+
+
+/*--------Recipes------*/
+.recipes{
+    position: relative;
+    text-align: center;
+    background-image: url(images/frontpage-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    background-attachment: fixed;
+     width: 100%;
+}
+
+
+.recipes_text{
+    position: absolute;
+    width: 100%;
+     text-align:center;
+     bottom: 35%;
+
+}
+.recipes_text h2{
+     color: #BB9F01;
+     font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 8vh;
+    letter-spacing: 2px;
+    position: relative;
+    text-align: center;
+    line-height: .4;
+    font-weight: 100;
+}   
+
+.recipes_text h1{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+   font-size: 6vh;
+   letter-spacing: 8px;
+   position: relative;
+   text-align: center;
+}      
+
+/*----------MENU-------*/
+.menu{
+    width: 100%;
+    height: auto;
+    padding: 35px 0;
+}
+
+.container .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+
+}
+.grid img{
+  max-width: 100%;
+}
+
+
+
+.menu_text{
+margin-top: 3rem;
+
+}
+.menu_text h2 {
+    position: relative;
+    text-align: center;
+    font-size: 10vh;
+   line-height: .4;
+   color: #BB9F01;
+   font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: 100;
+}
+
+
+.menu_text h3{
+    position: relative;
+    text-align: center;
+    font-size: 5vh;
+   color: #181918;
+   font-family: 'Bebas Neue', cursive;
+   letter-spacing: 4px;
+}
+.menu_text.menu_p{
+    display: flex;
+    position: relative;
+    padding-left: 20px;
+}
+.menu_text .btn {
+    position: relative;
+    display:block;
+    font-size: 1.8vh;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: #BB9F01;
+    padding: 3px 0;
+    background: transparent !important;
+    }
+   .menu_text .star{
+        font-size: 2vh;
+        text-align: center;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+/*-----Blend---*/
+
+.blend{
+    position: relative;
+    text-align: center;
+    background-image: url(images/reservation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    background-attachment: fixed;
+    width: 100%;
+  }
+
+
+    .blend_text{
+        position: absolute;
+        width: 100%;
+        text-align:center;
+        bottom: 35%;
+    
+    }
+    .blend_text h2{
+        color: #BB9F01;
+        font-family: 'Herr Von Muellerhoff', cursive;
+       font-size: 8vh;
+       letter-spacing: 2px;
+       position: relative;
+       text-align: center;
+       line-height: .4;
+       font-weight: 100;
+   }   
+   .blend_text h1{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+   font-size: 6vh;
+   letter-spacing: 8px;
+   position: relative;
+   text-align: center;
+}
+
+
+
+/*------reservation---*/
+.reservation{
+    width: 100%;
+    height: auto;
+    padding: 35px 0;
+    position: relative;
+    text-align: center;
+}
+.res_text{
+    margin-top: 3rem;
+}
+.res_text h2{
+    position: relative;
+    text-align: center;
+    font-size: 10vh;
+   line-height: .4;
+   color: #BB9F01;
+   font-family: 'Herr Von Muellerhoff', cursive;
+   font-weight: 100;
+}
+.res_text h3{
+    position: relative;
+    text-align: center;
+    font-size: 5vh;
+   color: #181918;
+   font-family: 'Bebas Neue', cursive;
+   letter-spacing: 4px;
+}
+.res_text.star{
+    font-size: 2vh;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+.res_text .p-text{
+    display: flex;
+    position: relative;
+    padding-left: 20px;
+}
+.res_text .btn {
+position: relative;
+display:block;
+font-size: 1.8vh;
+text-align: center;
+font-family: 'Bebas Neue', cursive;
+text-decoration: none;
+line-height: 1;
+letter-spacing: 0.1em;
+color: #BB9F01;
+padding: 3px 0;
+background: transparent !important;
+}
+.res_img {
+   width: 100%;
+position: relative;
+display: inline-flex;
+justify-content: center;
+}
+.res_img img {
+    height: 35vh;
+    width: 50%;
+    margin: 0 0.2rem;
+ }
+
+
+
+
+/*----Footer section--*/
+
+footer p
+{
+  color: #999;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+footer h2,h3
+{
+  color: #fff;
+}
+footer h2
+{
+  font-size: 18px;
+}
+.footer-top
+{
+  background: #262526;
+  padding: 80px 0;
+}
+.sec-one h2
+{
+  font-family:'Poppins';
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+
+.sec-two h2
+{
+  color: #fff;
+  font-family:'Poppins';
+  text-transform: uppercase;
+}
+.sec-two h2::before
+{
+  content:' | ';
+  color: #BB9F01;
+  padding-right: 10px;
+}
+
+.sec-two h3
+{
+  padding: 15px 0;
+  font-size: 2.3vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+line-height: 40px;
+}
+
+.sec-three h2
+{
+  color: #fff;
+  font-family:'Poppins';
+  text-transform: uppercase;
+}
+
+.sec-three h2::before
+{
+  content:' | ';
+  color: #BB9F01;
+  padding-right: 10px;
+}
+.sec-three a
+{
+  background: #494848;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+align-self: center;
+ margin-left: 1.5rem;
+}
+.sec-three a i
+{
+ font-size: 20px;
+ color: #fff;
+ padding: 10px 12px;
+ transition: all 0.3s ease-in-out;
+
+}
+
+.sec-three a i:hover
+{
+  color: #BB9F01;
+
+}
+
+.sec-four h2
+{
+  color: #fff;
+  font-family:'Poppins';
+  text-transform: uppercase;
+}
+
+.sec-four h2::before
+{
+  content:' | ';
+  color: #BB9F01;
+  padding-right: 10px;
+}
+.sec-four form input[type=submit]
+{
+  background: #BB9F01;
+  border: none;
+  padding: 3px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 3px 0;
+transition: all 0.5s ease-in-out;
+}
+
+.sec-four form input[type=submit]:hover
+{
+  color: #262526;
+}
+.copyright {
+text-align: center;
+background: #1b1b1b;
+line-height: 70px;
+}
+.map{
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-top: 1rem;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+.md-mb-30{
+  margin-bottom: 30px;
+}
+
+}
+@media only screen and (max-width: 767px)
+{
+  .sm-mb-30{
+    margin-bottom: 30px;
+  }
+  .footer-top{
+    padding: 50px 0;
+  }
+}
+
+
+
+
+
+
+
+
+

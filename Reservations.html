@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <!---links Tags-->
+     <link rel="stylesheet" href="../other pages/reservations.css">
+     <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="../bootstrap-4.5.3-dist/css/mobiscroll.jquery.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="icon" href="../images/logo.png"> 
+     <!---Script Tags--->
+       <script src="../src/jquery-3.6.0.js"></script> 
+<script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://kit.fontawesome.com/dc0b4d1ce5.js" ></script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <title>Delicious Delights</title>
+
+    
+</head>
+<body>
+     <header class="header">
+      <nav class="navbar navbar-expand-xl  bg-transparent">
+         
+        <!--left-side-->
+        <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Reservations.html">Reservation</a>
+            </li>
+          </ul>
+        </div>
+<!--left-side-->
+<!--center-side-->
+<button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-hamburger"></i>
+        </button>
+        <a class="navbar-brand  order-1 mr-xl-0" href="../index.html">
+          <img src="../images/logo.png" alt="logo" width="150px">
+        </a>
+<!--center-side-->
+
+<!--right-side-->
+        <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blogs</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="./contact_us.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+<!--right-side-->
+
+      </nav>
+           <div class="text">
+            <h2 class="heading">Make</h2>
+            <h3 class="title">Reservation</h3>    
+             <div class="divider "><span></span><span>✻</span><span></span></div> 
+                   <p class="line"> 
+                    Booking a table online is easy and takes just a couple of minutes
+               </p>   
+            </div>
+             
+     </header>
+
+     <form action="">
+   
+               <div class="reser">
+                    <h6 class="res-text">MAKE ONLINE RESERVASTION</h6>
+                    <div class="info">
+                         <div class="container-fluid">
+                              <div class="row">
+                    <div class="col-md-4 col-sm-12 date">
+                         <i class="fa fa-calendar"></i>
+                              <label style="width:fit-content; position: relative; margin: auto; background:rgba(210, 250, 35, 0.15); backdrop-filter: blur(4px);">                                  
+                                  <input id="picker" mbsc-input style="text-align: center; position: relative; margin: auto;" placeholder="Select Date" >
+                               </label>
+               </div> 
+           
+               <div class="col-md-4 col-sm-12">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <label style="width:fit-content; position: relative; margin: auto; background:rgba(210, 250, 35, 0.15); backdrop-filter: blur(4px);">
+                         <input id="demo-time" mbsc-input data-input data-label-style="stacked" style="text-align: center; position: relative; margin: auto;" placeholder="Select Time">
+                     </label>
+                    </div> 
+
+                    <div class="col-md-4 col-sm-12">
+               
+                    <div class="mbsc-col-sm-12 mbsc-col-md-6">
+                         <i class="fa fa-users" aria-hidden="true"></i>
+                         <label style="width:fit-content; position: relative; margin: auto; background:rgba(210, 250, 35, 0.15); backdrop-filter: blur(4px); ">
+                         <select mbsc-dropdown id="demo-mobile"  data-input-style="box" style="text-align: center; position: relative; margin: auto; ">
+                         <option value="1 Person"> 1 Person</option>
+                         <option value="2 Person"> 2 Person</option>
+                         <option value="3 Person"> 3 Person</option>
+                         <option value="4 Person"> 4 Person</option>
+                         <option value="5 Person"> 5 Person</option>
+                         <option value="6 Person"> 6 Person</option>
+                         <option value="7 Person"> 7 Person</option>
+                         <option value="8 Person"> 8 Person</option>
+                             </select>
+                         </label>
+                     </div>
+
+               </div> 
+          </div>
+          </div>
+          
+     </form>
+
+            
+
+              
+          </div>
+                   <!-- Button trigger modal -->
+<button type="button" class="btn-tab" data-toggle="modal" data-target="#exampleModal">
+    FIND A TABLE
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">INFORMATION</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label for="fname">NAME<span>*</span></label>
+            <input type="text" id="fname" name="Full Name" required placeholder="Full Name">
+            <br>          
+              <label for="mail">EMAIL<span>*</span></label>
+              <input type="email" id="mail" name="Email" required="@.com co" placeholder="Email Id">
+              <br>
+              <label for="Phone">PHONE NO<span>*</span></label>
+              <input type="text" id="Phone" pattern="03[0-9]{2}[0-9]{7}" name="Phone" placeholder="Mobile Number" required>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-outline-dark">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--modal box end-->
+
+
+
+                        <div class="divider"><span></span><span style="color: #000;">✻</span><span></span></div> 
+
+                        <div class="container-fluid">
+                             <div class="row">
+                                  <div class="col-sm-6">
+                                    <h4>
+                                         RESERVE BY PHONE
+                                    </h4>
+                                    <p class="para">
+                                        We take reservations for lunch and dinner. To make a reservation, please call us at (027) 8338 145 between 10am-6pm, Monday to Friday.
+
+                                        We do not book the bar area – we leave this for walk-in guests to ensure that we always offer some tables for those who have not booked.
+                                    </p>
+
+                                  </div>
+
+
+                                  <div class="col-sm-6">
+                                   <h4>
+                                       PRIVATE DINING & EVENTS
+                                   </h4>
+                                   <p class="para">
+                                        Whatever your event or celebration, we are here to make your special day a truly memorable one. Rosa’s private dining experts are more than happy to create custom floral arrangements and arrange for guests to meet Chef Moise during the course of their meal. For parties of 8-12 we have the roastery table which is available for private hire.
+                                   </p>
+                                       
+                              </div>
+                             </div>
+                        </div>
+          </div>
+         
+
+     </div>
+</div>
+<section class="about">
+     <div class="container">
+    <div class="row">
+    <div class="col-md-6 col-sm-12 discover">
+    <h2>The private</h2>
+    <h3>MEZZANINE</h3>
+    <div class="star">✻</div>
+    <p class="about-text" style="text-align: center;">Rosa’s 50 seat room, “The Meazzanine Room” features a temperature-controlled wine cellar, displays of more wine and a private atmosphere. A semi-private room, “Barbaresco,” is available for meetings, birthdays and other occasions. </p>
+    <p style="text-align: center;">
+     <h6 style="text-align: center;">
+          Seat up to 50 guests
+     </h6>
+  
+    </p>
+    </div>
+    
+    <div class="col-md-6 col-sm-12 gallery">
+                   <img width="100%" height="100%" src="../images/rest.jpg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    </div>
+    
+    </div>
+    
+
+    <div class="row" style="margin-top: 10rem;">
+
+     <div class="col-md-6 col-sm-12 gallery">
+          <img width="100%" height="100%" src="../images/rest2.jpg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+</div>
+     <div class="col-md-6 col-sm-12 discover">
+     <h2>The dining</h2>
+     <h3>CROWN</h3>
+     <div class="star">✻</div>
+     <p class="about-text" style="text-align: center;">Overlooking the dining room and open kitchen, can seat up to 75 guests or a standing reception of 130 guests. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+     <p style="text-align: center;">
+          <h6 style="text-align: center;">
+               Seat up to 100 guests
+          </h6>
+       
+   
+     </p>
+     </div>
+     
+   
+     
+     </div>
+    </div>
+    </section>
+    
+    <footer>
+     <div class="footer-top">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-3 col-sm-6 col-xs-12 sec-one md-mb-30 sm-mb-30">
+                     <h2>Delicious Delights</h2>
+                     <p>Everyone has a favorite restaurant that he or she loves to eat at. The best restaurant to go to in Altoona is The Delicious Delights. 
+                         This peaceful place has the most delicious food 
+                         The Delicious Delights is the most exquisite place to eat and is truly the finest restaurant in town.</p>
+                 </div>
+                     <div class="col-md-3 col-sm-6 col-xs-12 sec-two md-mb-30 sm-mb-30">
+                         <h2> Open Hours</h2>
+                         <h3>Tuesday to Friday</h3>
+                                       <p>7:00 AM - 9:00 PM</p>
+                                       <h3>Saturday to Sunday</h3>
+                                   <p>11:00 AM - 10:00 PM</p>    
+                     </div>
+     
+                     <div class="col-md-3 col-sm-6 col-xs-12 sec-three sm-mb-30">
+                         <h2>Follow Us</h2>
+                        <p>Follow us on our social media profile is order to keep updated.</p> 
+                    <a href="https://www.facebook.com/login/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+        
+                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                      <p class="map">
+                             <iframe style="filter: invert(95%)"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.5519807792607!2d66.98879981546894!3d24.844990551995085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb315fd9484034d%3A0xa34ea99b28ea0c40!2sPort%20Grand!5e0!3m2!1sen!2s!4v1624837372906!5m2!1sen!2s" width="100%" height="130" style="border:0;" allowfullscreen="ture" loading="lazy"></iframe>
+                          </p>
+                     </div>
+     
+                     <div class="col-md-3 col-sm-6 col-xs-12 sec-four sm-mb-30">
+                         <h2>Our Newsletter</h2>
+                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam totam accusamus enim aut deleniti nam corrupti exercitationem sequi, libero maiores.</p>
+                         <form action="">
+                             <input type="email">
+                             <input type="submit" value="Subcribe">
+                         </form>
+                       
+                     </div>
+     
+             </div>
+         </div>
+     </div>
+     
+     
+         <p class="copyright">All Right Reserved By &copy; Delicious Delights , 2021</p>
+     
+     
+     </footer>
+   
+
+
+<script src="../bootstrap-4.5.3-dist/js/mobiscroll.jquery.min.js"></script>
+
+<script src="../src/main.js">
+</script>
+<script>
+mobiscroll.setOptions({
+    theme: 'material',
+    themeVariant: 'light'
+});
+
+$(function () {
+
+    var now = new Date(),
+        until = new Date(now.getFullYear() + 10, now.getMonth());
+
+    $('#picker').mobiscroll().datepicker({
+        controls: ['date'],
+        dateFormat: 'DD/MM/YYYY',
+        dateWheels: 'DD - MMMM  YYY',
+        min: now,
+        max: until
+    });
+
+    $('#demo-time').mobiscroll().datepicker({
+        controls: ['time'],
+        select: 'range'
+    });
+});
+mobiscroll.settings = {
+    theme: 'ios',
+    themeVariant: 'light'
+};
+
+$(function () {
+
+     $('#demo-desktop').mobiscroll().select({
+        display: 'bubble',
+        touchUi: false
+    });
+
+
+});
+</script>
+<!--navbar scroll code-->
+<script type="text/javascript">
+  $(window).on('scroll',function(){
+      if ($(window).scrollTop()) {
+          $('nav').addClass('black');
+      }
+      else
+      {
+          $('nav').removeClass('black');
+      }
+  })
+  </script>
+   
+</body>
+</html>
